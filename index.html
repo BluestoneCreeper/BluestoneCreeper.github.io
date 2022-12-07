@@ -44,6 +44,11 @@
         <script>
             document.getElementById("SR").style.paddingTop = "10px";
             document.getElementById("SaL").style.paddingTop = "10px";
+
+            var siteWidth = 1280;
+            var scale = screen.width /siteWidth;
+
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
         </script>
     </body>
 </html>
