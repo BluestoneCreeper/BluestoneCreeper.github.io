@@ -43,14 +43,14 @@
         <br>
 
         <script>
-            document.getElementById("SR").style.paddingTop = "10px";
-            document.getElementById("SaL").style.paddingTop = "10px";
-
             var siteWidth = window.innerWidth;
             var scale = screen.width /siteWidth;
 
             var root = document.querySelector(':root');
             root.style.setProperty('--scale', scale);
+
+            document.getElementById("SR").style.paddingTop = (10*scale)+"px";
+            document.getElementById("SaL").style.paddingTop = (10*scale)+"10px";
         </script>
     </body>
 </html>
