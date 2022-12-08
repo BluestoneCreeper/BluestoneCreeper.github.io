@@ -8,7 +8,7 @@
     <body style="background-color: #2E282A;"  >
         <div class="container1">
             <h1 style="text-align: center;">Basic Rules</h1>
-            <p style="font-size:120%; text-align: center;"> -Press R to roll, click on a piece to select it and click on a highlighted possible move to move <br>
+            <p style="font-size:120%; text-align:center;"> -Press R to roll, click on a piece to select it and click on a highlighted possible move to move <br>
                 -If you roll a 1 or a 6 you may get a piece out by clicking on it in spawn <br>
                 -If a piece lands on another, the piece it landed on goes back home <br>
                 -If a 6 is rolled, the player can re-roll <br>
@@ -49,8 +49,15 @@
             var root = document.querySelector(':root');
             root.style.setProperty('--scale', scale);
 
+            var tmp = getComputedStyle(root);
+            var tmp2 = tmp.getPropertyValue('--leftsize');
+            var tmp3 = tmp.getPropertyValue('--scale');
+
             document.getElementById("SR").style.paddingTop = (10*scale)+"px";
-            document.getElementById("SaL").style.paddingTop = (10*scale)+"10px";
+            document.getElementById("SaL").style.paddingTop = (10*scale)+"px";
+
+            alert(tmp2+"")
+            alert(tmp3+"")
         </script>
     </body>
 </html>
