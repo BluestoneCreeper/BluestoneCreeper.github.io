@@ -5,21 +5,21 @@
 :root {
     --scale: 1;
     --leftsize: calc(( 100vh - (250px * var(--scale) + 130px * var(--scale) + 100px * var(--scale))) / 7);
-    
+    --tmp: 0;
 }
 .container1{
     width: 100%;
-    height: calc((250px + var(--leftsize)) * var(--scale));
+    height: calc(250px * var(--scale) + var(--leftsize));
     background: #E4572E;
 } 
 .container2{
     width: 100%;
-    height: calc((130px + var(--leftsize)) * var(--scale));
+    height: calc(130px * var(--scale) + var(--leftsize));
     background: #17BEBB;
 } 
 .container3{
     width: 100%;
-    height: calc((100px + var(--leftsize)) * var(--scale));
+    height: calc(100px * var(--scale) + var(--leftsize));
     background: #FFC914;
 
     /*color: white;*/
