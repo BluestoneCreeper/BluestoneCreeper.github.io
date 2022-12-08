@@ -4,29 +4,31 @@
 }
 :root {
     --scale: 1;
-    --leftsize: calc(( 100vh - (250px * var(--scale) + 130px * var(--scale) + 100px * var(--scale))) / 7);
-    --tmp: 0;
 }
 .container1{
     width: 100%;
-    height: calc(250px * var(--scale) + var(--leftsize));
+    min-height: 250px;
+    height: calc(250px * var(--scale) / 2);
     background: #E4572E;
 } 
 .container2{
     width: 100%;
-    height: calc(130px * var(--scale) + var(--leftsize));
+    min-height: 130px;
+    height: calc(130px * var(--scale) / 2);
     background: #17BEBB;
 } 
 .container3{
     width: 100%;
-    height: calc(100px * var(--scale) + var(--leftsize));
+    min-height: 100px;
+    height: calc(100px * var(--scale) / 2);
     background: #FFC914;
 
     /*color: white;*/
 }
 .end {
     width: 100%;
-    height: calc(100% - (250px * var(--scale) + var(--leftsize)) - (130px * var(--scale) + var(--leftsize)) - (100px * var(--scale) + var(--leftsize)));
+    min-height: 200px;
+    height: calc(200px * var(--scale) / 2);
     background: #76B041;
 }
 .center {
