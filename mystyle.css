@@ -9,17 +9,17 @@
 }
 .container1{
     width: 100%;
-    height: calc(250px * var(--scale) + var(--leftsize));
+    height: calc((250px + var(--leftsize)) * var(--scale));
     background: #E4572E;
 } 
 .container2{
     width: 100%;
-    height: calc(130px * var(--scale) + var(--leftsize));
+    height: calc((130px + var(--leftsize)) * var(--scale));
     background: #17BEBB;
 } 
 .container3{
     width: 100%;
-    height: calc(100px * var(--scale) + var(--leftsize));
+    height: calc((100px + var(--leftsize)) * var(--scale));
     background: #FFC914;
 
     /*color: white;*/
