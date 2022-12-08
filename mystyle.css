@@ -4,7 +4,6 @@
 }
 :root {
     --scale: 1;
-    --leftsize: 0;
     --leftsize: calc(( 100vh - (250px * var(--scale) + 130px * var(--scale) + 100px * var(--scale))) / 7);
     
 }
